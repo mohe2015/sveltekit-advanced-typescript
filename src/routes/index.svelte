@@ -1,10 +1,15 @@
 <script lang="ts">
+import { page } from "$app/stores";
+
+
 	async function awesomeFunction() {
 		console.log('hi');
 	}
 
+	
+
 	awesomeFunction();
 </script>
 
-<h1>Welcome to SvelteKit</h1>
+<h1>Welcome to SvelteKit on {$page.host}</h1>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
